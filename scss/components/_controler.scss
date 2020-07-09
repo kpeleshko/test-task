@@ -1,0 +1,22 @@
+.controller {
+    margin-top: .5rem;
+    position: relative;
+    
+    &__icon {
+        height: 2.4rem;
+        width: 2.4rem;
+        fill: $color-main;  
+    }
+
+    &__text {
+        position: absolute;
+        top: -1rem;
+        left: .7rem;
+        padding: .4rem .55rem;
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+        border-radius: 2rem;
+        color: white;
+        background-color: $color-main;
+    }
+}
