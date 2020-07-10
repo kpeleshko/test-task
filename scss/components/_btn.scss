@@ -5,8 +5,14 @@
     letter-spacing: .1px;
     font-weight: 600;
     font-size: 1.3rem;
+    transition: border .2s ease-in;
 
+    &:hover {
+        border: 1px solid $color-secondary;
+    }
+    
+    &:active,
     &--active {
-              
+        background-color: $color-secondary;  
     }
 }

@@ -1,0 +1,187 @@
+.footer {
+    //TEST
+    margin-top: 10.5rem;
+    padding-bottom: 2.8rem;
+
+
+    background-image: url(./../img/Footer_background_mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+
+    &__wrapper {
+        padding-top: 10.2rem;
+    }
+
+    &__titles {
+        display: block;
+        margin-bottom: .5rem;
+        font-size: 1.8rem;
+        font-weight: 800;
+        letter-spacing: .025px;
+        color: white;
+    }
+
+    &__info {
+        display: flex;
+    }
+
+    &__navigation {
+        margin-right: 1.7rem;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__navigation-links {
+        display: block;
+        margin-bottom: .75rem;
+        color: white;
+        letter-spacing: .025px;
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+
+    &__contact {
+        flex: 1;
+    }
+
+    &__contact-links {
+        font-size: 1.45rem;
+        line-height: 2.5rem;
+        font-weight: 600;
+        color: $color-secondary--bright-1;
+    }
+
+    &__contact-social {
+        margin-top: 1.6rem;
+    }
+
+    &__subscribe {
+        margin-top: 1.2rem;
+    }
+
+    &__language {
+        width: 24rem;
+        position: relative;
+    }
+
+    &__language-options {
+        width: 100%;
+        margin-top: 3rem;
+        padding: 1rem 1.25rem;
+        border: 1px solid white;
+        border-radius: 5px;
+        background-color: transparent;
+        color: white;
+        font-weight: 600;
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+    }
+
+    &__language-changer {
+        position: absolute;
+        top: 58%;
+        right: 1.5rem;
+        height: 2rem;
+        width: 2rem;
+        fill: white;
+    }
+
+    &__copyright {
+        margin: 2.6rem 0 2rem -.5rem;
+        // margin-top: 2.6rem;
+        // margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
+    }
+
+    &__copyright-logo {
+        margin-right: 2.5px;
+        height: 4.2rem;
+        width: 4.2rem;
+        fill: white;
+    }
+
+    &__copyright-text {
+        color: white;
+        font-size: 1.3rem;
+
+        &--bold {font-weight: 800;}
+    }
+
+    &__rules {
+        padding-right: 1rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__rules-link {
+        font-size: 1.2rem;
+        color: white;
+        text-decoration: underline;
+    }
+}
+
+.subscribe-form {
+    position: relative;
+
+    &__input {
+        width: 100%;
+        padding: .9rem 0 1.3rem 0;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid $color-secondary;
+        transition: border .2s ease-in;
+
+        &::placeholder {
+            font-size: 1.3rem;
+            color: white;
+        }
+
+        &:focus {
+            border-bottom: 1px solid white;
+        }
+    }
+
+    &__btn {
+        position: absolute;
+        bottom: .5rem;
+        right: 0;
+        background-color: transparent;
+        border: none;
+    }
+
+    &__icon {
+        background-color: transparent;
+        fill: $color-secondary;
+    }
+}
+
+
+.social {
+    display: flex;
+    
+    &__icon-wrapper {
+        position: relative;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+        background-color: white;
+        transition: background-color .3s ease-in;
+
+        &:not(:last-child) {margin-right: 2rem;}
+
+        &:hover {
+            background-color: $color-secondary;
+        }
+    }
+
+    &__icon {
+        height: 2.3rem;
+        width: 2.3rem;
+        fill: black;
+        @include absCenter;
+    }
+}

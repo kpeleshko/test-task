@@ -24,9 +24,7 @@
     }
 
     &__slider-cards {
-        display: flex;
-        overflow: hidden;
-        width: 100%;
+        // overflow: hidden;
     }
 }
 
@@ -233,3 +231,32 @@
 }
 
 .slick-list {padding: 0!important}
+
+.slick-dots {
+    bottom: -2.9rem;
+}
+
+
+.slider__dots {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.slider__dots li button::before{
+  display: none;
+}
+
+.slider__dots li {
+    display: block;
+    height: .85rem;
+    width: .85rem;
+    border-radius: 50%;
+    background-color: $color-main;
+}
+
+.slider__dots .slick-active {
+    width: 2rem;
+    border-radius: 1rem;
+    background-color: $color-secondary;
+}

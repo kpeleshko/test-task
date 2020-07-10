@@ -8,11 +8,16 @@
         background-color: $color-light-bg;
         border: 1px solid $color-main;
         border-radius: 5px;
+        transition: border .2s ease-in;
         
         &::placeholder {
             color: rgb(10, 3, 37);
             font-size: 1.3rem;
             letter-spacing: .8px;
+        }
+
+        &:focus {
+            border: 1px solid $color-secondary;
         }
     }
 
