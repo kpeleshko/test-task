@@ -8,16 +8,27 @@
         background-color: $color-light-bg;
         border: 1px solid $color-main;
         border-radius: 5px;
-        transition: border .2s ease-in;
+        transition: all .2s ease-in;
+
+        @include respond(phone) {
+            margin-top: 1rem;
+            height: 2.5rem;
+        }
         
         &::placeholder {
             color: rgb(10, 3, 37);
             font-size: 1.3rem;
             letter-spacing: .8px;
+
+            @include respond(phone) {
+                font-size: 1.2rem;
+                letter-spacing: 0;
+            }
         }
 
         &:focus {
             border: 1px solid $color-secondary;
+            box-shadow: 5px 5px 10px rgba(black, .05);
         }
     }
 
@@ -28,6 +39,10 @@
         transform: translateY(-40%);
         background-color: transparent;
         border: none;
+
+        @include respond(phone) {
+            transform: translateY(-20%);
+        }
     }
 
     &__icon { fill: $color-main;}

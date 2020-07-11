@@ -61,6 +61,12 @@ a {
 
 .header {
   padding: 3rem 0; }
+  @media only screen and (min-width: 600px) {
+    .header {
+      padding: 1.5rem 0 0 0; } }
+  @media only screen and (min-width: 600px) {
+    .header__container {
+      position: relative; } }
   .header__wrapper {
     display: flex;
     align-items: center;
@@ -86,6 +92,16 @@ a {
   .header__search {
     margin-top: 2rem;
     width: 100%; }
+    @media only screen and (min-width: 600px) {
+      .header__search {
+        width: 42vw;
+        position: absolute;
+        top: -7.2rem;
+        left: 6rem; } }
+    @media only screen and (min-width: 900px) {
+      .header__search {
+        width: 35vw;
+        left: 25rem; } }
 
 .footer {
   margin-top: 10.5rem;
@@ -94,8 +110,18 @@ a {
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover; }
+  @media only screen and (min-width: 600px) {
+    .footer {
+      margin-top: 7rem;
+      padding-left: 2rem; } }
   .footer__wrapper {
     padding-top: 10.2rem; }
+    @media only screen and (min-width: 600px) {
+      .footer__wrapper {
+        padding-top: 17rem; } }
+    @media only screen and (min-width: 900px) {
+      .footer__wrapper {
+        padding-top: 25rem; } }
   .footer__titles {
     display: block;
     margin-bottom: .5rem;
@@ -128,6 +154,13 @@ a {
     margin-top: 1.6rem; }
   .footer__subscribe {
     margin-top: 1.2rem; }
+    @media only screen and (min-width: 600px) {
+      .footer__subscribe {
+        margin: 3rem 0 2rem 0;
+        width: 72%; } }
+    @media only screen and (min-width: 900px) {
+      .footer__subscribe {
+        width: 45%; } }
   .footer__language {
     width: 24rem;
     position: relative; }
@@ -168,10 +201,17 @@ a {
     padding-right: 1rem;
     display: flex;
     justify-content: space-between; }
+    @media only screen and (min-width: 600px) {
+      .footer__rules {
+        justify-content: start; } }
   .footer__rules-link {
     font-size: 1.2rem;
     color: white;
     text-decoration: underline; }
+    @media only screen and (min-width: 600px) {
+      .footer__rules-link {
+        display: inline-block;
+        margin-right: 2rem; } }
 
 .subscribe-form {
   position: relative; }
@@ -186,7 +226,8 @@ a {
       font-size: 1.3rem;
       color: white; }
     .subscribe-form__input:focus {
-      border-bottom: 1px solid white; }
+      border-bottom: 1px solid white;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05); }
   .subscribe-form__btn {
     position: absolute;
     bottom: .5rem;
@@ -221,9 +262,22 @@ a {
 
 .about-us {
   padding-top: 4.1rem; }
+  @media only screen and (min-width: 600px) {
+    .about-us {
+      margin: 0 1.4rem 0 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 1.4rem 5rem 2rem;
+      padding: 5.5rem 1.5rem 2.5rem 1.5rem;
+      background-image: linear-gradient(to bottom, #f6f4fc, white);
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+      border-radius: .5rem; } }
   .about-us__preview {
     position: relative;
     height: 20rem; }
+    @media only screen and (min-width: 900px) {
+      .about-us__preview {
+        flex: 50%; } }
   .about-us__logo {
     z-index: 1;
     position: absolute;
@@ -279,6 +333,10 @@ a {
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 2rem;
     grid-row-gap: .5rem; }
+    @media only screen and (min-width: 900px) {
+      .about-us__desc-wrapper {
+        flex: 50%;
+        padding-left: 2rem; } }
   .about-us__desc {
     display: flex;
     align-items: center;
@@ -301,9 +359,19 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center; }
+    @media only screen and (min-width: 600px) {
+      .about-us__navigation {
+        justify-content: center; } }
+    @media only screen and (min-width: 900px) {
+      .about-us__navigation {
+        margin: 4rem auto 0 auto; } }
   .about-us__navigation-item:not(:last-child) {
     margin-right: .5rem;
     padding: 1.1rem 1.8rem; }
+    @media only screen and (min-width: 600px) {
+      .about-us__navigation-item:not(:last-child) {
+        margin-right: 2rem;
+        padding: 1.1rem 2rem; } }
   .about-us__navigation-item:last-child {
     height: 4rem;
     width: 4rem;
@@ -338,13 +406,22 @@ a {
     background-color: #f6f4fc;
     border: 1px solid #16395b;
     border-radius: 5px;
-    transition: border .2s ease-in; }
+    transition: all .2s ease-in; }
+    @media only screen and (min-width: 600px) {
+      .search__input {
+        margin-top: 1rem;
+        height: 2.5rem; } }
     .search__input::placeholder {
       color: #0a0325;
       font-size: 1.3rem;
       letter-spacing: .8px; }
+      @media only screen and (min-width: 600px) {
+        .search__input::placeholder {
+          font-size: 1.2rem;
+          letter-spacing: 0; } }
     .search__input:focus {
-      border: 1px solid #07d9b4; }
+      border: 1px solid #07d9b4;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05); }
   .search__btn {
     position: absolute;
     top: 50%;
@@ -352,16 +429,28 @@ a {
     transform: translateY(-40%);
     background-color: transparent;
     border: none; }
+    @media only screen and (min-width: 600px) {
+      .search__btn {
+        transform: translateY(-20%); } }
   .search__icon {
     fill: #16395b; }
 
 .doctors-section {
-  padding-top: 4.5rem; }
+  padding-top: 4.5rem;
+  display: flex;
+  flex-direction: column; }
+  @media only screen and (min-width: 900px) {
+    .doctors-section {
+      margin-top: 5rem; } }
   .doctors-section__header {
     margin-bottom: 2.2rem;
     display: flex;
     justify-content: space-between;
     align-items: baseline; }
+    @media only screen and (min-width: 900px) {
+      .doctors-section__header {
+        width: 45rem;
+        margin: 0 auto 2.2rem auto; } }
   .doctors-section__title {
     font-size: 2.4rem;
     line-height: 2.6rem;
@@ -373,17 +462,24 @@ a {
     line-height: 1.4rem;
     font-weight: 800;
     color: #07d9b4; }
+  .doctors-section__slider-cards {
+    display: flex; }
 
 .card {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   position: relative;
   padding: 1.5rem 1.4rem 1.5rem 1.5rem;
-  width: 100%;
+  max-width: 38.5rem;
   height: 40rem;
   background-color: white;
   border: 1px solid #cad9fe;
   border-radius: .5rem; }
+  @media only screen and (min-width: 600px) {
+    .card {
+      width: auto;
+      max-width: 45rem; } }
   .card--online .card-avatar__description--online::after,
   .card--offline .card-avatar__description--offline::after {
     content: '';

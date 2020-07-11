@@ -1,6 +1,16 @@
 .header {
     padding: 3rem 0;
 
+    @include respond(phone) {
+        padding: 1.5rem 0 0 0;
+    }
+
+    &__container {
+        @include respond(phone) {
+            position: relative;
+        }
+    }
+
     &__wrapper {
         display: flex;
         align-items: center;
@@ -37,6 +47,17 @@
     &__search {
         margin-top: 2rem;
         width: 100%;
+        @include respond(phone) {
+            width: 42vw;
+            position: absolute;
+            top: -7.2rem;
+            left: 6rem;
+        }
+
+        @include respond(tab-port) {
+            width: 35vw;
+            left: 25rem;
+        }
     }
 }
 

@@ -3,6 +3,11 @@
     margin-top: 10.5rem;
     padding-bottom: 2.8rem;
 
+    @include respond(phone) {
+        margin-top: 7rem;
+        padding-left: 2rem;
+    }
+
 
     background-image: url(./../img/Footer_background_mobile.svg);
     background-repeat: no-repeat;
@@ -11,6 +16,13 @@
 
     &__wrapper {
         padding-top: 10.2rem;
+
+        @include respond(phone) {
+            padding-top: 17rem;
+        }
+        @include respond(tab-port) {
+            padding-top: 25rem;
+        }
     }
 
     &__titles {
@@ -59,6 +71,14 @@
 
     &__subscribe {
         margin-top: 1.2rem;
+
+        @include respond(phone) {
+            margin: 3rem 0 2rem 0;
+            width: 72%;
+        }
+        @include respond(tab-port) {
+            width: 45%;
+        }
     }
 
     &__language {
@@ -115,12 +135,21 @@
         padding-right: 1rem;
         display: flex;
         justify-content: space-between;
+
+        @include respond(phone) {
+            justify-content: start;
+        }
     }
 
     &__rules-link {
         font-size: 1.2rem;
         color: white;
         text-decoration: underline;
+
+        @include respond(phone) {
+            display: inline-block;
+            margin-right: 2rem;
+        }
     }
 }
 
@@ -142,6 +171,7 @@
 
         &:focus {
             border-bottom: 1px solid white;
+            box-shadow: 5px 5px 10px rgba(black, .05);
         }
     }
 
