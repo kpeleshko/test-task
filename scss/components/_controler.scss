@@ -1,8 +1,15 @@
 .controller {
     margin-top: .5rem;
     position: relative;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform .2s ease-in;
+
+    &:hover .controller__icon { transform: scale(1.2);}
     
     &__icon {
+        display: block;
         height: 2.4rem;
         width: 2.4rem;
         fill: $color-main;  

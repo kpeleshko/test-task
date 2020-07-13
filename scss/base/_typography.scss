@@ -2,6 +2,7 @@
     font-family: 'AvenirNextCyr';
     src: local('AvenirNextCyr Regular'),
          local('AvenirNextCyr-Regular'),
+         url('../../fonts/AvenirNextCyr-Regular.woff2') format('woff2'),
          url('../../fonts/AvenirNextCyr-Regular.woff') format('woff'),
          url('../../fonts/AvenirNextCyr-Regular.ttf') format('ttf');
     font-weight: 400;
@@ -12,6 +13,7 @@
     font-family: 'AvenirNextCyr';
     src: local('AvenirNextCyr Medium'),
          local('AvenirNextCyr-Medium'),
+         url('../../fonts/AvenirNextCyr-Medium.woff2') format('woff2'),
          url('../../fonts/AvenirNextCyr-Medium.woff') format('woff'),
          url('../../fonts/AvenirNextCyr-Medium.ttf') format('ttf');
     font-weight: 600;
@@ -22,18 +24,9 @@
     font-family: 'AvenirNextCyr';
     src: local('AvenirNextCyr Demi'),
          local('AvenirNextCyr-Demi'),
+         url('../../fonts/AvenirNextCyr-Demi.woff2') format('woff2'),
          url('../../fonts/AvenirNextCyr-Demi.woff') format('woff'),
          url('../../fonts/AvenirNextCyr-Demi.ttf') format('ttf');
     font-weight: 800;
     font-style: bold;
 }
-
-// @font-face {
-//     font-family: 'Muli';
-//     src: local('Multi Bold'),
-//          local('Multi-Bold'),
-//          url('../../../fonts/Muli-Bold.woff') format('woff'),
-//          url('../../../fonts/Muli-Bold.woff2') format('woff2');
-//     font-weight: 700;
-//     font-style: normal;
-// }

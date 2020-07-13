@@ -13,12 +13,12 @@
     }
 
     &__preview {
+        margin-bottom: 1.3rem;
         position: relative;
+        width: 100%;
         height: 20rem;
 
-        @include respond(tab-port) {
-            flex: 50%;
-        }
+        @include respond(tab-port) { flex: 50%}
     }
 
     &__logo {
@@ -50,6 +50,8 @@
         background: linear-gradient(to bottom, rgba(black, .01), rgba(black, .6));
     }
 
+    &__title-link { color: white;}
+
     &__title {
         max-width: 80%;
         position: absolute;
@@ -60,7 +62,6 @@
         line-height: 2.1rem;
         letter-spacing: .15px;
         color: white;
-        
     }
 
     &__subtitle {
@@ -80,10 +81,10 @@
         border: 1px solid $color-main--light;
         background-color: white;
         @include flexCenter;
+        cursor: pointer;
     }
 
     &__desc-wrapper {
-        margin-top: 1.3rem;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 2rem;
@@ -126,13 +127,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        @include respond(phone) {
-            justify-content: center;
-        }
+        @include respond(phone) { justify-content: center;}
 
-        @include respond(tab-port) {
-            margin: 4rem auto 0 auto;
-        }
+        @include respond(tab-port) { margin: 4rem auto 0 auto;}
     }
 
     &__navigation-item {
@@ -140,6 +137,8 @@
         &:not(:last-child) {
             margin-right: .5rem;
             padding: 1.1rem 1.8rem;
+
+            @include respond(small-phone) {padding: 1rem;}
 
             @include respond(phone) {
                 margin-right: 2rem;
@@ -152,7 +151,25 @@
             width: 4rem;
             fill: $color-main--light-1;
 
-            &>* { transform: translateX(-.1rem);}
+            & > * { transform: translateX(-.1rem);}
         }
+    }
+
+    &__gallery {
+        display: none;
+    }
+
+    &__gallery--visible { 
+        display: flex;
+        margin-top: 3rem;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    &__gallery-img {
+        height: 12rem;
+        width: 16rem;
+        border-radius: 5px;
+        margin-right: 1rem;
     }
 }
